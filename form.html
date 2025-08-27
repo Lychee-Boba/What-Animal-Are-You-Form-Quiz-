@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Joy Zheng</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="moving-bg">
+            <header>
+                <img src="images/title-text.png" alt="title" id="title-text">
+            </header>
+
+            <form action="results.html" method="get">
+                <div class="title">
+                    <h1>What viral animal are you?</h1>
+                    <p>Take this short quiz to see if Moo Deng is your hidden spirit animal!</p>
+                </div>
+
+                <div class="name">
+                    <label for="fname">What is your name?</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Pesto" size="50" required>
+                </div>
+
+                <img src="images/snoop-removebg.png" alt="snoop-border" id="snoop">
+        
+                <p>What genre of shows/books/etc do you prefer?</p>
+                    <div class="genre-check">
+                        <input class="box" type="checkbox" id="horror" name="genres" value="horror">
+                        <label for="horror">Horror</label>
+                        <br>
+                        <input class="box" type="checkbox" id="romance" name="genres" value="romance">
+                        <label for="romance">Romance</label>
+                        <br>
+                        <input class="box" type="checkbox" id="slice" name="genres" value="slice">
+                        <label for="slice">Slice of Life</label>
+                        <br>
+                        <input class="box" type="checkbox" id="comedy" name="genres" value="comedy">
+                        <label for="comedy">Comedy</label>
+                        <br>
+                        <input class="box" type="checkbox" id="drama" name="genres" value="drama">
+                        <label for="drama">Drama</label>
+                    </div>
+
+                    <p>If water was sprayed at you, how would you react?</p>
+                    <div class="water">
+                        <input class="radiooo" type="radio" id="run" name="react" value="run">
+                        <label for="run">RUN AWAY!</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="waterlover" name="react" value="waterlover">
+                        <label for="waterlover">I love water! I'd enjoy a little refreshing spray.</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="violent" name="react" value="violent">
+                        <label for="violent">Jump the person>:0</label>
+                        <br>
+                    </div>
+
+                    <p>If you were an animal, what kind would you be?</p>
+                    <div class="animal">
+                        <input class="radiooo" type="radio" id="bird" name="animal" value="bird">
+                        <label for="run">Bird</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="mammal" name="animal" value="mammal">
+                        <label for="mammal">Mammal</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="fish" name="animal" value="fish">
+                        <label for="fish">Fish</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="reptile" name="animal" value="reptile">
+                        <label for="reptile">Reptile</label>
+                        <br>
+                    </div>
+
+                    <p>What is your favorite season?</p>
+                    <div class="season">
+                        <input class="radiooo" type="radio" id="spring" name="season" value="spring">
+                        <label for="spring">Spring</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="summer" name="season" value="summer">
+                        <label for="summer">Summer</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="fall" name="season" value="fall">
+                        <label for="fall">Fall</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="winter" name="season" value="winter">
+                        <label for="winter">Winter</label>
+                        <br>
+                    </div>
+
+                    <p>What is your strongest quality?</p>
+                    <div class="quality">
+                        <input class="radiooo" type="radio" id="smart" name="ality" value="smart">
+                        <label for="smart">Intelligence</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="looks" name="ality" value="looks">
+                        <label for="looks">Appearance</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="funny" name="ality" value="funny">
+                        <label for="funny">Humor</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="kind" name="ality" value="kind">
+                        <label for="kind">Kindess</label>
+                        <br>
+                    </div>
+
+                    <p>Choose a willage dessert</p>
+                    <div class="dessert">
+                        <input class="radiooo" type="radio" id="ice" name="food" value="ice">
+                        <label for="smart">Icecream</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="cup" name="food" value="cup">
+                        <label for="cup">Oddly Green GT Cupcake</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="cake" name="food" value="cake">
+                        <label for="cake">Mystery square cake? brownie? who knows...</label>
+                        <br>
+                        <input class="radiooo" type="radio" id="cookie" name="food" value="cookie">
+                        <label for="cookie">Matcha Cookie</label>
+                        <br>
+                    </div>
+
+                    <div class="slide">
+                        <label for="likely">How likely are you to make a new friend?</label>
+                        <input type="range" id="likely" name="slider" min="0" max="5">
+                    </div>
+
+                    <div>
+                        <input id="submit-btn" type="submit" value="See Results">
+                    </div>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+</html>

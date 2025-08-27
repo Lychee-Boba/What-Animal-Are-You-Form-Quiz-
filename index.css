@@ -1,0 +1,233 @@
+body{
+    background-color: #F5DDE0;
+    background-image: url("images/grid-bg.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.moving-bg{
+    background: url("images/grid-bg.jpg");
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    animation: bg-animate 3s ease-in-out infinite;
+}
+
+@keyframes bg-animate{
+    0%{
+        background-position: 0 -120px;
+    }
+    50%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 -120px;
+    }
+}
+
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    background-color: #faf4f7;
+    padding: 10px;
+    border-bottom: 5px solid #ddb8ba;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-height: 200px;
+}
+
+#title-text{
+    max-width: 675px;
+    margin: auto;
+    animation: header-bounce 1s ease-in-out infinite;
+}
+
+@keyframes header-bounce{
+    0%{
+        width: 650px;
+    }
+    50%{
+        width: 675px;
+    }
+    100%{
+        width: 650px;
+    }
+}
+
+#song{
+    position:absolute;
+}
+
+form{
+    z-index: 1;
+    background:linear-gradient(#FAF6F4, #F5DDE0, #EABEC3, #DD868C);
+    border:10px solid #DD868C;
+    border-radius: 20px;
+    max-width: 700px;
+    height: 1750px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0px 0px 30px #fdeef5;
+    animation: color-change 2s ease-in-out infinite;
+
+}
+
+@keyframes color-change{
+    0%{
+        box-shadow: 0px 0px 30px #fdeef5;
+    }
+    25%{
+        box-shadow: 0px 0px 30px #FFD0E2;
+    }
+    50%{
+        box-shadow: 0px 0px 30px #e9edf6;
+    }
+    75%{
+        box-shadow: 0px 0px 30px #DBDAEC;
+    }
+    100%{
+        box-shadow: 0px 0px 30px #fdeef5;
+    }
+}
+
+.title{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#snoop{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    color: #5263ad;
+}
+
+p{
+    text-align: center;
+    color: #7695c8;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.name{
+    color:#D0637C;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#fname{
+    border-radius: 20px;
+    text-align: center;
+}
+
+.genre-check{
+    font-size: 20px;
+    color: #D0637C;
+    margin-left: 130px;
+}
+
+input.box{
+    width: 20px;
+    height: 20px;
+}
+
+.water{
+    font-size: 20px;
+    color: #D0637C;
+    margin-left: 130px;
+}
+
+input.radiooo{
+    width: 20px;
+    height: 20px;
+}
+
+.animal{
+    font-size: 20px;
+    color: #D0637C;
+    margin-left: 130px;
+}
+
+.season{
+    font-size: 20px;
+    color: #D0637C;
+    margin-left: 130px;
+}
+
+.quality{
+    font-size: 20px;
+    color: #D0637C;
+    margin-left: 130px;
+}
+
+.dessert{
+    font-size: 20px;
+    color: #cf506e;
+    margin-left: 130px;
+}
+
+.slide{
+    text-align: center;
+    color: #7695c8;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#submit-btn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 5px solid #5263ad;
+    color:#D0637C;
+    background-color: #fff3f3;
+    font-size: 25px;
+}
+
+#submit-btn:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+    background-color: #cac4e2;
+    font-size: 30px;
+}
+
+#results{
+    background-color: white;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px #c54949;
+}
+
+#result-img{
+    max-width: 200px;
+}
+
+#return-btn{
+    display: block;
+    margin: 8px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    background-color: #5263ad;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
